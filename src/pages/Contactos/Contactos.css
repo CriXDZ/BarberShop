@@ -1,0 +1,192 @@
+/* General Styles */
+.contacto-page {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Main Content Styles */
+main {
+  width: 90%;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.formulario {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-contacto {
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+label {
+  display: block;
+  font-size: 1rem; /* 16px */
+  margin-bottom: 0.5em;
+  color: #666;
+}
+
+.input-padron {
+  width: 100%;
+  padding: 0.5em; /* 10px */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box; /* Incluye padding y border en el width */
+}
+
+/* Estilos específicos para el campo de teléfono */
+.iti {
+  width: 100%;
+  box-sizing: border-box; /* Incluye padding y border en el width */
+}
+
+.iti__flag-container {
+  padding-right: 8px;
+}
+
+.iti__input {
+  padding-left: 50px; /* Ajusta según sea necesario para el espacio de la bandera */
+  box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+textarea.input-padron {
+  resize: vertical;
+}
+
+.contacto-preferencia,
+.horario-preferencia {
+  margin-top: 2em;
+  background-color: #f9f9f9;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.radio-group label {
+  display: block;
+  margin-bottom: 0.5em; /* 10px */
+  font-size: 1rem; /* 16px */
+}
+
+.checkbox {
+  display: block;
+  margin-top: 1em;
+}
+
+.enviar {
+  background-color: #c78c19;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em; /* 10px 20px */
+  font-size: 1rem; /* 16px */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  animation: buttonFadeIn 0.8s ease-in;
+}
+
+.enviar:hover {
+  background-color: #a06d15;
+}
+
+/* Table Styles */
+.horarios {
+  margin-top: 3em;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+th,
+td {
+  padding: 0.5em; /* 10px */
+  text-align: left;
+}
+
+th {
+  background-color: #c78c19;
+  color: #fff;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  main {
+    width: 95%; /* Ajusta el ancho según sea necesario */
+  }
+
+  .formulario {
+    padding: 1.5em;
+  }
+
+  .input-padron {
+    width: 100%;
+    font-size: 0.9375rem; /* 15px */
+  }
+
+  .titulo-contacto {
+    font-size: 1.5em;
+  }
+
+  .enviar {
+    padding: 0.5em 1em; /* 8px 16px */
+    font-size: 0.875rem; /* 14px */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .formulario {
+    padding: 1em;
+    margin: 0 auto; /* Centra el formulario */
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho del viewport */
+    box-sizing: border-box; /* Incluye padding y border en el width */
+  }
+
+  .input-padron {
+    width: 100%;
+    font-size: 0.875rem; /* 14px */
+  }
+
+  .iti {
+    max-width: 100%; /* Asegura que el campo de teléfono no se desborde */
+  }
+
+  .iti__input {
+    padding-left: 50px; /* Ajusta el padding para pantallas pequeñas */
+  }
+}
+
+/* --- Animations --- */
+@keyframes buttonFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,126 @@
+/* Estilos Generales del Header */
+.header {
+  background-color: #eaeaea;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+/* Contenedor principal */
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Logo + Título */
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header__logo {
+  width: 60px;
+  height: auto;
+}
+
+.header__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Botón de menú (Hamburguesa) */
+.header__toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Lista de enlaces en escritorio */
+.header__links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Enlaces */
+.header__links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover */
+.header__links a:hover {
+  color: #c78c19;
+}
+
+/* MÓVIL: Ajustes y Menú Lateral */
+@media (max-width: 480px) {
+  .header__toggle {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 11;
+  }
+
+  .header__brand {
+    margin-left: 1rem;
+  }
+
+  /* Ocultamos la lista en escritorio */
+  .header__links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #eaeaea;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    transition: right 0.3s ease;
+    z-index: 10;
+  }
+
+  /* Cuando está activo, se desliza desde la derecha */
+  .header__links.active {
+    right: 0;
+    display: flex;
+  }
+
+  /* Ajuste de los enlaces en móvil */
+  .header__links a {
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+
+  .header__links a:hover {
+    color: #c78c19;
+  }
+}

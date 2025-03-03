@@ -1,0 +1,37 @@
+/* Grosor y fondo del contenedor de la barra (track) */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Track: color de fondo + gradiente sutil */
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #f1f1f1, #eaeaea);
+  border-radius: 6px;
+  margin: 0.5rem 0;
+}
+
+/* Thumb: gradiente en el pulgar y borde */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #c78c19, #a67613);
+  border-radius: 6px;
+  border: 2px solid #f1f1f1;
+  transition: background 0.3s, border 0.3s;
+}
+
+/* Hover en el thumb: color más oscuro */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #a67613, #7b4c0a);
+  border-color: #eaeaea;
+}
+
+/* Ajuste para la esquina donde se juntan las barras (en caso de scroll horizontal + vertical) */
+::-webkit-scrollbar-corner {
+  background: #eaeaea;
+}
+
+/* Soporte Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c78c19 #eaeaea;
+}

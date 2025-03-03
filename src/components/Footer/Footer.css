@@ -1,0 +1,106 @@
+.footer {
+  color: #fff;
+  padding: 3rem 1.5rem;
+  font-family: sans-serif;
+  position: relative;
+}
+
+/* Bloque Superior */
+.footer__top {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo + Marca */
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Logo */
+.footer__logo {
+  width: 80px;
+  height: auto;
+}
+
+/* Marca */
+.footer__brandName {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* Enlaces */
+.footer__links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__links li {
+  margin: 0;
+}
+
+.footer__links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer__links a:hover {
+  color: #cfcfcf;
+  transform: translateY(-2px);
+}
+
+/* Redes Sociales */
+.footer__social a {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer__social a:hover {
+  color: #cfcfcf;
+  transform: translateY(-2px);
+}
+
+/* Línea divisoria */
+.footer__divider {
+  margin: 2rem auto;
+  max-width: 1200px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Bloque Inferior */
+.footer__bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsivo para pantallas pequeñas (480px) */
+@media (max-width: 480px) {
+  .footer__top {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer__social {
+    margin-top: 1rem;
+  }
+}

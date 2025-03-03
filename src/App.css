@@ -1,0 +1,4 @@
+/* Global Styles */
+@import url("./styles/reset.css");
+@import url("./styles/global.css");
+@import url("./styles/scrollbar.css");

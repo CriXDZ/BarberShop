@@ -1,0 +1,45 @@
+/* Diferenciales Section Styles */
+.diferenciales {
+  padding: 2em 0;
+  text-align: center;
+}
+
+.contenido-diferenciales {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.imagen-diferenciales {
+  width: 45%;
+  max-width: 350px;
+  margin-right: 8%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.lista-diferenciales {
+  width: 45%;
+  list-style: none;
+  padding: 4em;
+  margin-left: 5;
+}
+
+.lista-diferenciales li {
+  font-size: 18px;
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.lista-diferenciales li:before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  color: #c78c19;
+}

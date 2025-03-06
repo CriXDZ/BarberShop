@@ -1,0 +1,101 @@
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+
+  .banner {
+    height: 10em;
+    width: 100%;
+  }
+
+  .principal {
+    padding: 1em;
+  }
+
+  .titulo-principal {
+    font-size: 2em;
+  }
+
+  .utensilios {
+    width: 80px;
+    height: auto;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    margin-top: 0.2em;
+  }
+
+  .mision {
+    font-size: 16px;
+  }
+
+  /* Sección de Mapa */
+  .mapa {
+    padding: 1.5em 1em;
+  }
+
+  .mapa-contenedor {
+    width: 100%;
+    margin-top: 1.5em;
+    margin-bottom: -2em;
+  }
+
+  .mapa-iframe {
+    height: 200px;
+  }
+
+  /* Sección de Diferenciales */
+  .diferenciales {
+    padding: 1.5em 1em;
+    text-align: center;
+  }
+
+  .contenido-diferenciales {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagen-diferenciales {
+    width: 90%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .lista-diferenciales {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .lista-diferenciales li {
+    font-size: 16px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    text-align: start;
+  }
+
+  .lista-diferenciales li:before {
+    font-size: 18px;
+    left: 0;
+  }
+
+  .video-container {
+    max-width: 100%;
+    margin: 1em auto;
+    padding: 0 1em;
+  }
+
+  .video {
+    border-radius: 5px;
+    aspect-ratio: 16/9;
+  }
+
+  /* Texto General */
+  .ubicacion {
+    font-size: 14px;
+    padding: 0 1em 20px 1em;
+  }
+
+  .texto-video {
+    padding: 1em;
+    font-size: 14px;
+  }
+}

@@ -2,7 +2,12 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import Banner from "../../components/SectionHome/Banner";
 import Main from "../../components/SectionHome/Main";
-import "./Home.css";
+import "./General.css";
+import "./Principal.css";
+import "./Mapa.css";
+import "./Diferenciales.css";
+import "./Video.css";
+import "./Responsive.css";
 
 function Home() {
   const homeLinks = [

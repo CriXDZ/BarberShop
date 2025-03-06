@@ -1,0 +1,18 @@
+/* General Styles */
+.home-page {
+  background-color: #f5f5f5;
+}
+
+/* Banner Styles */
+.banner {
+  width: 100%;
+  display: block;
+}
+
+/* Clases compartidas entre secciones */
+.principal,
+.mapa,
+.diferenciales,
+.video {
+  margin-bottom: 2em;
+}

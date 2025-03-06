@@ -1,5 +1,6 @@
 import React from "react";
 import diferenciales from "../../assets/diferenciales/diferenciales.jpg";
+import "@justinribeiro/lite-youtube";
 
 const SectionDiferenciales = () => {
   return (
@@ -29,16 +30,12 @@ const SectionDiferenciales = () => {
         </p>
       </div>
 
-      <div className="video">
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube-nocookie.com/embed/wcVVXUV0YUY?si=YxbvpMDE_5GGsWVz"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
+      <div className="video-container">
+        <lite-youtube
+          videoid="wcVVXUV0YUY"
+          title="Video de YouTube"
+          className="video"
+        ></lite-youtube>
       </div>
     </section>
   );

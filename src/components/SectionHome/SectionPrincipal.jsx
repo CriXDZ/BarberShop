@@ -8,28 +8,27 @@ const SectionPrincipal = () => {
       <img
         className="utensilios"
         src={utensilios}
-        alt="utensilios de un barbero"
+        alt="Utensilios de un barbero"
       />
       <p>
-        Ubicada en el corazón de la ciudad, la Barbería Alura trae para el
-        mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la
-        Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes
-        diariamente.
+        Ubicada en el corazón de la ciudad, la Barbería Alura trae al mercado lo
+        mejor para el cuidado de su cabello y barba. Fundada en 2020, se ha
+        convertido en un referente local y conquista nuevos clientes cada día.
       </p>
       <p>
-        Nuestra misión es:
+        Nuestra misión es:{" "}
         <em>
-          <strong className="misión">
+          <strong className="mision">
             "Proporcionar autoestima y calidad de vida a nuestros clientes".
           </strong>
         </em>
       </p>
       <p>
-        Profesionales experimentados que están constantemente observando los
-        cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros
-        clientes las últimas tendencias. El atendimiento posee un padrón de
-        excelencia y agilidad, garantizando calidad y satisfacción de nuestros
-        clientes.
+        Contamos con profesionales experimentados que observan constantemente
+        los cambios y movimientos en el mundo de la moda para ofrecer las
+        últimas tendencias. Nuestro servicio se basa en un alto estándar de
+        excelencia y agilidad, garantizando la calidad y satisfacción de todos
+        nuestros clientes.
       </p>
     </section>
   );

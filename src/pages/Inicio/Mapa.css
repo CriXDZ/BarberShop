@@ -2,23 +2,30 @@
 .mapa {
   text-align: center;
   padding: 2rem 0;
-  background-color: #f7f7f7;
 }
 
 .mapa-contenedor {
   width: 90%;
   max-width: 800px;
-  margin: 0 auto;
-  margin-top: 3em;
-  margin-bottom: -4em;
+  margin: 3em auto 1em;
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+
+.mapa-contenedor::before {
+  content: "";
+  display: block;
+  padding-bottom: 56.25%;
 }
 
 .mapa-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 350px;
+  height: 100%;
   border: none;
-  border-radius: 15px;
   outline: none;
 }

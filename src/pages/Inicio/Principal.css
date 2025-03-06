@@ -3,6 +3,7 @@
   padding: 3em 0;
   max-width: 940px;
   margin: 0 auto;
+  margin-bottom: 1em;
 }
 
 .titulo-principal {
@@ -16,19 +17,17 @@
 
 .principal p {
   margin-bottom: 1em;
-  position: relative;
+  line-height: 1.6;
 }
 
 .utensilios {
   width: 120px;
   height: auto;
-  margin-right: 15px;
-  margin-bottom: 10px;
   float: left;
-  margin-top: 0.2em;
+  margin: 0.2em 15px 10px 0;
 }
 
-.misión {
+.mision {
   font-style: italic;
   font-weight: bolder;
   color: #c78c19;

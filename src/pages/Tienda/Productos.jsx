@@ -5,7 +5,7 @@ import "./Productos.css";
 
 const ProductsPage = () => {
   const links = [
-    { label: "Home", to: "/" },
+    { label: "Inicio", to: "/" },
     { label: "Contacto", to: "/contactos" },
   ];
 
@@ -13,8 +13,18 @@ const ProductsPage = () => {
     <div className="productos-page">
       <Header links={links} />
       <main>
-        <h1 className="titulo-productos">Nuestros Productos</h1>
-        <ItemList />
+        <section>
+          <div className="featured-container">
+            <div className="featured-heading">
+              <h2 className="featured-title">Nuestros productos destacados</h2>
+              <p className="featured-subtitle">
+                Descubre los mejores cortes y cuidados para tu estilo. Confía en
+                nuestros expertos para lucir siempre impecable.
+              </p>
+            </div>
+            <ItemList />
+          </div>
+        </section>
       </main>
     </div>
   );

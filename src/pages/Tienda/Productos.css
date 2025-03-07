@@ -1,132 +1,172 @@
-/* General Styles */
+/* Estructura general */
 .productos-page {
   font-family: "Montserrat", sans-serif;
-  background-color: #f5f5f5;
+  background: linear-gradient(
+    0deg,
+    rgba(224, 224, 224, 1) 0%,
+    rgba(245, 245, 245, 1) 100%
+  );
 }
 
-/* Main Content Styles */
-main {
-  width: 90%;
-  max-width: 940px;
+/* Sección principal que envuelve el título y los productos */
+.featured-container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 1em 1em;
 }
 
-/* Product Titles */
-.titulo-productos {
+.featured-heading {
+  max-width: 600px;
+  margin: 0 auto;
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-  color: #333;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.featured-title {
+  font-size: 2rem;
   font-weight: bold;
+  color: #333;
 }
 
-.producto-grid {
+.featured-subtitle {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* --- Cuadrícula de productos --- */
+.featured-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.25rem;
-  justify-content: center;
-  margin-bottom: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-.producto-card {
-  background-color: #fff;
+/* --- Tarjeta de producto --- */
+.featured-card {
+  position: relative;
+  background-color: #f8f8f8;
   border-radius: 0.625rem;
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  text-align: center;
+  overflow: hidden;
   transition: transform 0.3s;
-  text-decoration: none; /* Added */
-  color: inherit; /* Added */
+  text-decoration: none;
+  color: inherit;
 }
 
-.producto-card:hover {
+.featured-card:hover {
+  transform: scale(1.03);
+}
+
+/* Contenedor para forzar aspecto 1:1 */
+.featured-image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100%;
+}
+
+.featured-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.featured-card:hover .featured-image {
   transform: scale(1.05);
 }
 
-.producto-card img,
-.producto-card h2,
-.producto-card p {
-  /* Added */
-  text-decoration: none;
-}
-
-.producto-imagen {
-  width: 100%;
-  height: auto;
-  border-bottom: 2px solid #c78c19;
-  margin-bottom: 1rem;
-}
-
-.producto-titulo {
-  font-size: 1.5rem;
-  margin-bottom: 0.625rem;
+/* Badge (NEW, SALE) */
+.badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background-color: #fff;
   color: #333;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
 }
 
-.producto-descripción {
+.badge-sale {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Contenido de la tarjeta */
+.featured-card-content {
+  padding: 1rem;
+}
+
+.featured-card-title {
   font-size: 1rem;
-  color: #666;
-  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
 }
 
-.producto-precio {
-  font-size: 1.25rem;
+.featured-card-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+/* Rating de estrellas */
+.featured-card-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.featured-card-rating svg {
+  width: 1rem;
+  height: 1rem;
+  color: #ffcc00;
+  margin-right: 2px;
+}
+
+/* Precios */
+.featured-card-price {
+  font-size: 1rem;
   font-weight: bold;
   color: #c78c19;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .titulo-productos {
-    font-size: 2rem;
-  }
-
-  .producto-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .producto-card {
-    padding: 0.75rem;
-  }
-
-  .producto-titulo {
-    font-size: 1.25rem;
-  }
-
-  .producto-descripción {
-    font-size: 0.875rem;
-  }
-
-  .producto-precio {
-    font-size: 1.125rem;
-  }
+.featured-card-price-discount {
+  font-size: 0.875rem;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 0.5rem;
 }
 
+/* Responsivo */
 @media screen and (max-width: 480px) {
-  .titulo-productos {
-    font-size: 1.75rem;
+  .featured-title {
+    font-size: 1.5rem;
+  }
+  .featured-subtitle {
+    font-size: 0.85rem;
   }
 
-  .producto-grid {
-    gap: 0.75rem;
+  .featured-card {
+    transition: none;
   }
 
-  .producto-card {
-    padding: 0.5rem;
+  .featured-card:hover {
+    transform: none;
   }
 
-  .producto-titulo {
-    font-size: 1.1rem;
+  .featured-image {
+    transition: none;
   }
 
-  .producto-descripción {
-    font-size: 0.8rem;
-  }
-
-  .producto-precio {
-    font-size: 1rem;
+  .featured-card:hover .featured-image {
+    transform: none;
   }
 }
